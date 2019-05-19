@@ -43,13 +43,13 @@ function createMap(earthquakes) {
 }
 
 function magColor(mag) {
-  return mag > 5 ? '#581845' :
-          mag > 4  ? '#900C3F' :
-          mag > 3  ? '#C70039' :
-          mag > 2  ? '#FF5733' :
-          mag > 1  ? '#FFC300' :
-          mag > 0  ? '#DAF7A6' :
-                     '#BBFFAD';
+  return mag > 5 ? 'darkred' :
+          mag > 4  ? 'red' :
+          mag > 3  ? 'orange' :
+          mag > 2   ? 'yellow' :
+          mag > 1   ? 'yellowgreen' :
+          mag > 0   ? 'green' :
+                      'green';
 };
 
 var legend = L.control({position: 'bottomright'});
